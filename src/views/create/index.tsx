@@ -61,7 +61,19 @@ export const CreateView: FC = ({ setOpenCreateModal }) => {
                     updateAuthority: publicKey,
                 },
                 {
-                    // Add remaining required fields here
+                  createMetadataAccountArgsV3:{
+                    data:{
+                      name:token.name,
+                      symbol:token.symbol,
+                      uri:metadataUrl,
+                      creators:null,
+                  
+                  
+                      //   from here onwards u need to write  
+
+                  
+                    }
+                  }
                 });
 
             } catch (error) {
